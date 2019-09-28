@@ -34,6 +34,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/lge/sf340n/proprietary/lib,system/lib)
 
+# lib64 files
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/lge/sf340n/proprietary/lib64,system/lib64)
+
 # etc files
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/lge/sf340n/proprietary/etc,system/etc)
@@ -46,12 +50,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libtime_genoff \
     QtiTelephonyService \
-    TimeService \
-    datastatusnotification \
-    fastdormancy \
-    shutdownlistener \
     CNEService \
-    QtiTetherService \
-    dpmserviceapp \
-    qcrilmsgtunnel \
-    QtiTetherService
+    com.qualcomm.location \
+    TimeService \
+    colorservice \
+    qcrilmsgtunnel
